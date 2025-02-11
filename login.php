@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $senha = $_POST['senha'] ?? '';
 
     if ($email === '123@email.com' && $senha === '123') {
-        echo json_encode(["status" => "sucesso", "mensagem" => "Login realizado com sucesso"]);
+        echo json_encode(["status" => "sucesso", "mensagem" => "Login realizado"]);
     } else {
         echo json_encode(["status" => "erro", "mensagem" => "Credenciais inválidas"]);
     }
